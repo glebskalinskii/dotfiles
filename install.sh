@@ -10,9 +10,13 @@ homedir=~/dotfiles                    # dotfiles directory
 filesdir=$homedir/files
 olddir=~/dotfiles_old             # old dotfiles backup directory
 
+# cd into dotfies dir
+cd "$(dirname "$0")"
+
 files="$(find files -depth 1 -name '*' | cut -d'/' -f2)"
 
 ##########
+
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
