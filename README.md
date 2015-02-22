@@ -2,8 +2,8 @@
 
 ##INSTALATION
 
-1.Clone repo
-2.Run ```install.sh``` script to create symlinks and backup old files.
+1. Clone repo
+2. Run ```install.sh``` script to create symlinks and backup old files.
 
 ##VIM/TMUX
 
