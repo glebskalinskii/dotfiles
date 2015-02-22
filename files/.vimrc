@@ -23,6 +23,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
+Plugin 'hail2u/vim-css3-syntax'
 
 "--------------------------------------------------------------
 
@@ -47,6 +48,9 @@ set number
 "--------------------------------------------------------------
 ino jk <esc>
 ino kj <esc>
+"--------------------------------------------------------------
+"EASY MOTION
+"--------------------------------------------------------------
 nmap s <Plug>(easymotion-s)
 "--------------------------------------------------------------
 " COLOR SCHEME
