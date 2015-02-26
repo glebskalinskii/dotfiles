@@ -63,11 +63,21 @@ set softtabstop=4
 "--------------------------------------------------------------
 " DIFFERENT
 " -------------------------------------------------------------
+
+" turn syntax support on
 syntax on
 
+" turn on line number
 set number
 
+" make backspace work with previously inserted text
 set backspace=2
+
+" copy the indentation from the previous line
+set autoindent
+
+" nowrap
+set nowrap
 
 "==============================================================
 
