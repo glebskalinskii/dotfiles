@@ -22,8 +22,16 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
+
+"automatically add the closing quote, bracket ... 
+Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
+
 Plugin 'hail2u/vim-css3-syntax'
+
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'pangloss/vim-javascript'
 
 "--------------------------------------------------------------
 
@@ -98,3 +106,6 @@ nmap s <Plug>(easymotion-s)
 " NERDTree
 " -------------------------------------------------------------
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+
+" split current line, mostly for { }
+imap <C-c> <CR><Esc>O
