@@ -78,6 +78,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#=============================================
+# source aliaces and functions
 for file in ~/.{aliases,functions}; do
 	[ -r "$file" ] && source "$file"
 done

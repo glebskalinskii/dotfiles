@@ -1,10 +1,9 @@
 #!/bin/bash
-############################
-# .make.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
-############################
 
-########## Variables
+# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+#===========================================================================================
+
+# Variables
 
 homedir=~/dotfiles                    # dotfiles directory
 filesdir=$homedir/files
@@ -15,7 +14,7 @@ cd "$(dirname "$0")"
 
 files="$(find files -depth 1 -name '*' | cut -d'/' -f2)"
 
-##########
+#===========================================================================================
 
 
 # create dotfiles_old in homedir
