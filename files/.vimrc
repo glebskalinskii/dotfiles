@@ -52,6 +52,7 @@ let g:user_emmet_leader_key='<C-W>'
 " COLOR SCHEME
 "--------------------------------------------------------------
 syntax enable
+set t_Co=256
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256 

@@ -1,4 +1,3 @@
-#!/bin/bash
 
 #oh-my-zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -10,3 +9,5 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ./brew.sh
 ./brew-cask.sh
 
+# install npm packages
+npm install trash
