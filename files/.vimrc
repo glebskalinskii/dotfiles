@@ -26,7 +26,8 @@ Plugin 'tpope/vim-surround'
 "automatically add the closing quote, bracket ... 
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'hail2u/vim-css3-syntax'
 
