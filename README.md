@@ -32,3 +32,6 @@ brew install vim --override-system-vi
 ```
 
 Issue on github: [https://github.com/gmarik/Vundle.vim/issues/167](https://github.com/gmarik/Vundle.vim/issues/167)
+
+##TO DO
+1.Alfred - add path
