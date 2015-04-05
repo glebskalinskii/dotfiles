@@ -18,7 +18,15 @@ Plugin 'gmarik/Vundle.vim'
 " PLUGINS
 "--------------------------------------------------------------
 
+" ---Theme---
 Plugin 'altercation/vim-colors-solarized'
+
+" ---Syntax---
+Plugin 'othree/html5.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/javascript-libraries-syntax.vim'
+
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
@@ -30,10 +38,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 
-Plugin 'hail2u/vim-css3-syntax'
-
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
 
 "--------------------------------------------------------------
