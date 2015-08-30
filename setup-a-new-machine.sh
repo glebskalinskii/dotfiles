@@ -13,4 +13,4 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 npm install trash
 
 # karabiner settings
-sh ~/Desktop/karabiner-import.sh
+./karabiner-import.sh
