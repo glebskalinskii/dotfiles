@@ -33,5 +33,11 @@ brew install vim --override-system-vi
 
 Issue on github: [https://github.com/gmarik/Vundle.vim/issues/167](https://github.com/gmarik/Vundle.vim/issues/167)
 
+##NPM
+
+Possible issues with npm.
+
+Possible solution: [https://gist.github.com/DanHerbert/9520689](https://gist.github.com/DanHerbert/9520689)
+
 ##TO DO
 1.Alfred - add path ( /opt/homebrew-cask/Caskroom/ )
