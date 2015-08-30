@@ -14,3 +14,8 @@ npm install trash
 
 # karabiner settings
 ./karabiner-import.sh
+
+# test installs
+git --version
+node -v
+npm -v
