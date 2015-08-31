@@ -5,7 +5,7 @@
 1. Clone repo
 2. Run ```./setup-a-new-machine.sh``` with ```sudo``` to install all things.
 3. Run ```./sync.sh``` script to create symlinks and backup old files.
-4. Install [solorized theme](http://ethanschoonover.com/solarized/vim-colors-solarized) for terminal.
+4. ~~Install [solorized theme](http://ethanschoonover.com/solarized/vim-colors-solarized) for terminal.~~
 5. Install vim plugins ```vim +PluginInstall```
 
 ##VIM/TMUX
