@@ -1,6 +1,7 @@
 
 #oh-my-zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+cp ./undefined.zsh-theme ~/.oh-my-zsh/themes
 
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
