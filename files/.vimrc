@@ -90,12 +90,14 @@ set backspace=2
 
 " copy the indentation from the previous line
 set autoindent
+set smartindent
 
 " nowrap
 set nowrap
 
 " refresh file if changed outside of vim
 set autoread
+au FocusGained,BufEnter * :silent! !
 
 "==============================================================
 
