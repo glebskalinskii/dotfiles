@@ -70,7 +70,7 @@ colorscheme solarized
 "--------------------------------------------------------------
 " pressing in Insert mode will not quit and delete 
 " all existing cursors.
-let g:multi_cursor_exit_from_insert_mode
+let g:multi_cursor_exit_from_insert_mode=0
 
 "--------------------------------------------------------------
 " TABS
