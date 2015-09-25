@@ -1,0 +1,4 @@
+pane	0	0	:~/Documents	1	:*	0	:/Users/undefined	0	zsh	:
+pane	0	0	:~/Documents	1	:*	1	:/Users/undefined/Documents	1	zsh	:
+window	0	0	1	:*	15c7,239x65,0,0{119x65,0,0,0,119x65,120,0,1}
+state	0	

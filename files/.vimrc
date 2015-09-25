@@ -26,6 +26,7 @@ Plugin 'othree/html5.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'mxw/vim-jsx'
 
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
@@ -49,7 +50,7 @@ filetype plugin indent on    " required
 " EMMET
 " -------------------------------------------------------------
 let g:user_emmet_install_global = 0
-autocmd FileType html,php,css,scss EmmetInstall
+autocmd FileType html,cfm,php,css,scss EmmetInstall
 let g:user_emmet_leader_key='<C-E>'
 
 "==============================================================
@@ -63,6 +64,13 @@ set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256 
 colorscheme solarized
+
+"--------------------------------------------------------------
+" MULTI CURSOR
+"--------------------------------------------------------------
+" pressing in Insert mode will not quit and delete 
+" all existing cursors.
+let g:multi_cursor_exit_from_insert_mode
 
 "--------------------------------------------------------------
 " TABS
@@ -119,6 +127,18 @@ nmap s <Plug>(easymotion-s)
 " NERDTree
 " -------------------------------------------------------------
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+"
+"--------------------------------------------------------------
+" netrw
+"--------------------------------------------------------------
+" nmap <C-D> :Explore<CR>
+" nmap <C-X> :Rex<CR>
+" Allow netrw to remove non-empty local directories
+" let g:netrw_localrmdir='rm -r'
 
 " split current line, mostly for { }
 imap <C-c> <CR><Esc>O
+
+"--------------------------------------------------------------
+" DIFFERENT
+"--------------------------------------------------------------
