@@ -93,6 +93,10 @@ syntax on
 " turn on line number
 set number
 
+" highlight current line
+set cursorline
+hi clear CursorLine
+
 " make backspace work with previously inserted text
 set backspace=2
 
