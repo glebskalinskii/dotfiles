@@ -24,6 +24,7 @@ Plugin 'altercation/vim-colors-solarized'
 " ---Syntax---
 Plugin 'othree/html5.vim'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
@@ -39,7 +40,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 
-Plugin 'pangloss/vim-javascript'
+Plugin 'evindor/vim-rusmode'
+
 
 "--------------------------------------------------------------
 
@@ -53,6 +55,19 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,cfm,php,css,scss EmmetInstall
 let g:user_emmet_leader_key='<C-E>'
 
+"--------------------------------------------------------------
+" MULTI CURSOR
+"--------------------------------------------------------------
+" pressing in Insert mode will not quit and delete 
+" all existing cursors.
+let g:multi_cursor_exit_from_insert_mode=0
+
+"--------------------------------------------------------------
+" VIM-RUSMODE
+"--------------------------------------------------------------
+let g:rusmode_normal_layout='British'
+let g:rusmode_autotoggle_insertleave=1
+
 "==============================================================
 
 "--------------------------------------------------------------
@@ -64,13 +79,6 @@ set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256 
 colorscheme solarized
-
-"--------------------------------------------------------------
-" MULTI CURSOR
-"--------------------------------------------------------------
-" pressing in Insert mode will not quit and delete 
-" all existing cursors.
-let g:multi_cursor_exit_from_insert_mode=0
 
 "--------------------------------------------------------------
 " TABS
@@ -93,9 +101,9 @@ syntax on
 " turn on line number
 set number
 
-" highlight current line
+" highlight current line number
 set cursorline
-hi clear CursorLine
+hi clear CursorLine " removes line highliting leaving just line number
 
 " make backspace work with previously inserted text
 set backspace=2
@@ -111,6 +119,7 @@ set nowrap
 set autoread
 au FocusGained,BufEnter * :silent! !
 
+
 "==============================================================
 
 
@@ -123,6 +132,8 @@ au FocusGained,BufEnter * :silent! !
 "--------------------------------------------------------------
 ino jk <esc>
 ino kj <esc>
+ino йк <esc>
+ino кй <esc>
 "--------------------------------------------------------------
 "EASY MOTION
 "--------------------------------------------------------------
@@ -144,5 +155,5 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 imap <C-c> <CR><Esc>O
 
 "--------------------------------------------------------------
-" DIFFERENT
+" Different
 "--------------------------------------------------------------

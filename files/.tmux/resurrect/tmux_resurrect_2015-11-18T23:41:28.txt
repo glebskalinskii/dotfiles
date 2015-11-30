@@ -1,0 +1,10 @@
+pane	grekodom	0	:gulp	1	:*	0	:/Users/undefined/Documents/_projects/grekodom	1	vim	:vim
+pane	grekodom	0	:gulp	1	:*	1	:/Users/undefined/Documents/_projects/grekodom	0	node	:gulp  
+pane	grekodom	0	:gulp	1	:*	2	:/Users/undefined/Documents/_projects/grekodom	0	node	:node /Users/undefined/.node/bin/nodemon --ignore ./public/ server.js
+pane	grekodom	0	:gulp	1	:*	3	:/Users/undefined/Documents/_projects/grekodom	0	mongo	:mongo
+pane	grekodom	0	:gulp	1	:*	4	:/Users/undefined/Documents/_projects/grekodom	0	zsh	:
+pane	grekodom	1	:vim	0	:-	0	:/Users/undefined/Documents/_projects/grekodom	0	zsh	:
+pane	grekodom	1	:vim	0	:-	1	:/Users/undefined/Documents/_projects/grekodom	1	zsh	:
+window	grekodom	0	1	:*	a917,239x65,0,0{155x65,0,0,4,83x65,156,0[83x16,156,0,13,83x15,156,17,23,83x16,156,33,6,83x15,156,50,24]}
+window	grekodom	1	0	:-	9ae0,239x65,0,0{119x65,0,0,26,119x65,120,0,29}
+state	grekodom	

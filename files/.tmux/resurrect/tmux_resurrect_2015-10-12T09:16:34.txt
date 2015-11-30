@@ -1,0 +1,12 @@
+pane	0	0	:gulp	1	:*	0	:/Users/undefined/Documents/_lions/dev.dubailynx.com/site	1	vim	:vim
+pane	0	0	:gulp	1	:*	1	:/Users/undefined/Documents/_lions/dev.dubailynx.com/site/templates/proto-fest-programme	0	node	:gulp  
+pane	0	0	:gulp	1	:*	2	:/Users/undefined/Documents/_lions/dev.dubailynx.com/site	0	zsh	:
+pane	grekodom	0	:nodemon	1	:*	0	:/Users/undefined/Documents/_projects/grekodom	0	vim	:vim
+pane	grekodom	0	:nodemon	1	:*	1	:/Users/undefined/Documents/_projects/grekodom	1	node	:node /Users/undefined/.node/bin/nodemon server.js
+pane	grekodom	0	:nodemon	1	:*	2	:/Users/undefined/Documents/_projects/grekodom	0	mongo	:mongo
+pane	grekodom	1	:../node-mongodb	0	:-	0	:/Users/undefined/Documents/code/sandbox/node-mongodb	1	vim	:vim
+pane	grekodom	1	:../node-mongodb	0	:-	1	:/Users/undefined/Documents/code/sandbox/node-mongodb	0	zsh	:
+window	0	0	1	:*	7120,239x65,0,0{155x65,0,0,0,83x65,156,0[83x33,156,0,1,83x31,156,34,2]}
+window	grekodom	0	1	:*	6143,239x65,0,0{155x65,0,0,4,83x65,156,0[83x32,156,0,5,83x32,156,33,6]}
+window	grekodom	1	0	:-	8474,239x65,0,0{154x65,0,0,9,84x65,155,0,10}
+state	grekodom	
