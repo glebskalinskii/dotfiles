@@ -40,8 +40,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 
-Plugin 'evindor/vim-rusmode'
-
 
 "--------------------------------------------------------------
 
@@ -61,12 +59,6 @@ let g:user_emmet_leader_key='<C-E>'
 " pressing in Insert mode will not quit and delete 
 " all existing cursors.
 let g:multi_cursor_exit_from_insert_mode=0
-
-"--------------------------------------------------------------
-" VIM-RUSMODE
-"--------------------------------------------------------------
-let g:rusmode_normal_layout='British'
-let g:rusmode_autotoggle_insertleave=1
 
 "==============================================================
 
