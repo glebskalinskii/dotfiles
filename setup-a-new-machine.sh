@@ -12,6 +12,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # install npm packages
 npm install trash
+npm install --global psi
 
 # install solarized theme for terminal(requires to be set as default in Preferences)
 open -a Terminal ./solarized-dark-xterm-256color.terminal
