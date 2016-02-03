@@ -45,3 +45,9 @@ alias gstd='git stash drop'
 # ----------------------
 alias cfstart='/Applications/ColdFusion11/cfusion/bin/coldfusion start'
 alias cfstop='/Applications/ColdFusion11/cfusion/bin/coldfusion stop'
+
+
+# ----------------------
+# Paths
+# ----------------------
+alias cppath='pwd | pbcopy'
