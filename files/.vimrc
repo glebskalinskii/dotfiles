@@ -28,14 +28,17 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
+" Plugin 'evidens/vim-twig'
 
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
+Plugin 'godlygeek/tabular'
 
-"automatically add the closing quote, bracket ... 
-Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+
+Plugin 'Raimondi/delimitMate' "automatically add the closing quote, bracket ...
 Plugin 'tpope/vim-fugitive'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
@@ -50,8 +53,8 @@ filetype plugin indent on    " required
 " EMMET
 " -------------------------------------------------------------
 let g:user_emmet_install_global = 0
-autocmd FileType html,cfm,php,css,scss EmmetInstall
 let g:user_emmet_leader_key='<C-E>'
+autocmd FileType html,php,twig,css,scss EmmetInstall
 
 "--------------------------------------------------------------
 " MULTI CURSOR
@@ -60,7 +63,14 @@ let g:user_emmet_leader_key='<C-E>'
 " all existing cursors.
 let g:multi_cursor_exit_from_insert_mode=0
 
+"--------------------------------------------------------------
+" CtrlP
+"--------------------------------------------------------------
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_show_hidden = 1
+
 "==============================================================
+
 
 "--------------------------------------------------------------
 " COLOR SCHEME
@@ -110,9 +120,8 @@ set nowrap
 " refresh file if changed outside of vim
 set autoread
 au FocusGained,BufEnter * :silent! !
-
-
 "==============================================================
+
 
 
 "==============================================================
@@ -124,8 +133,6 @@ au FocusGained,BufEnter * :silent! !
 "--------------------------------------------------------------
 ino jk <esc>
 ino kj <esc>
-ino йк <esc>
-ino кй <esc>
 "--------------------------------------------------------------
 "EASY MOTION
 "--------------------------------------------------------------
