@@ -97,6 +97,9 @@ set softtabstop=4
 " DIFFERENT
 " -------------------------------------------------------------
 
+" ignore files (CtrlP)
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 " turn syntax support on
 syntax on
 
@@ -141,14 +144,6 @@ nmap s <Plug>(easymotion-s)
 " NERDTree
 " -------------------------------------------------------------
 nmap <silent> <C-D> :NERDTreeToggle<CR>
-"
-"--------------------------------------------------------------
-" netrw
-"--------------------------------------------------------------
-" nmap <C-D> :Explore<CR>
-" nmap <C-X> :Rex<CR>
-" Allow netrw to remove non-empty local directories
-" let g:netrw_localrmdir='rm -r'
 
 " split current line, mostly for { }
 imap <C-c> <CR><Esc>O
