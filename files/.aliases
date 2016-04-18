@@ -43,4 +43,4 @@ alias gstd='git stash drop'
 # ----------------------
 # Paths
 # ----------------------
-alias cppath='pwd | pbcopy'
+alias cpath='pwd | pbcopy'

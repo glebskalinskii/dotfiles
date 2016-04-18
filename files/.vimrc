@@ -28,6 +28,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
+" Plugin 'luochen1990/rainbow'
 " Plugin 'evidens/vim-twig'
 
 Plugin 'Lokaltog/vim-easymotion'
@@ -69,6 +70,10 @@ let g:multi_cursor_exit_from_insert_mode=0
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_show_hidden = 1
 
+"--------------------------------------------------------------
+" Rainbow
+"--------------------------------------------------------------
+let g:rainbow_active = 1
 "==============================================================
 
 
@@ -96,6 +101,11 @@ set softtabstop=4
 "--------------------------------------------------------------
 " DIFFERENT
 " -------------------------------------------------------------
+
+" swap files
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
 " ignore files (CtrlP)
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
