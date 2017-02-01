@@ -87,3 +87,6 @@ for file in ~/.{aliases,functions}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
+
+export NVM_DIR="/Users/undefined/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
