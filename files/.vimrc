@@ -28,8 +28,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
-" Plugin 'luochen1990/rainbow'
-" Plugin 'evidens/vim-twig'
+Plugin 'digitaltoad/vim-jade'
 
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
@@ -91,12 +90,12 @@ colorscheme solarized
 " TABS
 " -------------------------------------------------------------
 " size of a hard tabstop
-set tabstop=4
+set tabstop=2
 " size of an "indent"
-set shiftwidth=4
+set shiftwidth=2
 " a combination of spaces and tabs are used to simulate tab stops at a width
-"  " other than the (hard)tabstop
-set softtabstop=4
+" other than the (hard)tabstop
+set softtabstop=2
 
 "--------------------------------------------------------------
 " DIFFERENT
@@ -112,6 +111,14 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " turn syntax support on
 syntax on
+
+" Show file options above the command line using :vsp
+set wildmenu
+
+" Don't offer to open certain files/directories
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=*.pdf,*.psd
+set wildignore+=node_modules/*,bower_components/*
 
 " turn on line number
 set number
