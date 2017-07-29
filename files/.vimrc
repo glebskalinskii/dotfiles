@@ -66,7 +66,7 @@ let g:multi_cursor_exit_from_insert_mode=0
 "--------------------------------------------------------------
 " CtrlP
 "--------------------------------------------------------------
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|(node_modules)$'
 let g:ctrlp_show_hidden = 1
 
 "--------------------------------------------------------------
