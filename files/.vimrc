@@ -24,10 +24,11 @@ Plugin 'altercation/vim-colors-solarized'
 " ---Syntax---
 Plugin 'othree/html5.vim'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'pangloss/vim-javascript'
+  " Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
+Plugin 'chemzqm/vim-jsx-improve'
 Plugin 'digitaltoad/vim-jade'
 
 Plugin 'Lokaltog/vim-easymotion'
@@ -66,7 +67,7 @@ let g:multi_cursor_exit_from_insert_mode=0
 "--------------------------------------------------------------
 " CtrlP
 "--------------------------------------------------------------
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|(node_modules)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|(node_modules|build)$'
 let g:ctrlp_show_hidden = 1
 
 "--------------------------------------------------------------
@@ -96,6 +97,8 @@ set shiftwidth=2
 " a combination of spaces and tabs are used to simulate tab stops at a width
 " other than the (hard)tabstop
 set softtabstop=2
+" Expand TABs to spaces
+set expandtab
 
 "--------------------------------------------------------------
 " DIFFERENT
@@ -172,3 +175,28 @@ imap <C-c> <CR><Esc>O
 "--------------------------------------------------------------
 " Different
 "--------------------------------------------------------------
+
+
+
+
+"==============================================================
+" SCRIPTS
+"==============================================================
+
+" Open multiple lines (insert empty lines) before or after current line,
+" and position cursor in the new space, with at least one blank line
+" before and after the cursor.
+" http://vim.wikia.com/wiki/Insert_multiple_lines
+function! OpenLines(nrlines, dir)
+  let nrlines = a:nrlines < 3 ? 3 : a:nrlines
+  let start = line('.') + a:dir
+  call append(start, repeat([''], nrlines))
+  if a:dir < 0
+    normal! 2k
+  else
+    normal! 2j
+  endif
+endfunction
+" Mappings to open multiple lines and enter insert mode.
+nnoremap <Leader>o :<C-u>call OpenLines(v:count, 0)<CR>S
+nnoremap <Leader>O :<C-u>call OpenLines(v:count, -1)<CR>S
