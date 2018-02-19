@@ -188,13 +188,13 @@ imap <C-c> <CR><Esc>O
 " before and after the cursor.
 " http://vim.wikia.com/wiki/Insert_multiple_lines
 function! OpenLines(nrlines, dir)
-  let nrlines = a:nrlines < 3 ? 3 : a:nrlines
+  let nrlines = a:nrlines < 2 ? 2 : a:nrlines
   let start = line('.') + a:dir
   call append(start, repeat([''], nrlines))
   if a:dir < 0
-    normal! 2k
+    execute "normal! ". nrlines. "k"
   else
-    normal! 2j
+    execute "normal! ". nrlines. "j"
   endif
 endfunction
 " Mappings to open multiple lines and enter insert mode.
