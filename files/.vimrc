@@ -24,12 +24,14 @@ Plugin 'altercation/vim-colors-solarized'
 " ---Syntax---
 Plugin 'othree/html5.vim'
 Plugin 'hail2u/vim-css3-syntax'
-  " Plugin 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'chemzqm/vim-jsx-improve'
 Plugin 'digitaltoad/vim-jade'
+
+Plugin 'ap/vim-css-color'
 
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
@@ -121,6 +123,7 @@ set wildmenu
 " Don't offer to open certain files/directories
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
 set wildignore+=*.pdf,*.psd
+set wildignore+=.cache/*
 set wildignore+=node_modules/*,bower_components/*
 
 " turn on line number
