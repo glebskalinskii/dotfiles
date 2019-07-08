@@ -1,6 +1,7 @@
 #!/bin/sh
 
-cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
+# cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
+cli=/Applications/Karabiner-Elements.app/Contents/Karabiner-Elements
 
 $cli set repeat.wait 23
 /bin/echo -n .

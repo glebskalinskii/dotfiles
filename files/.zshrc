@@ -88,5 +88,5 @@ for file in ~/.{aliases,functions}; do
 done
 unset file
 
-export NVM_DIR="/Users/undefined/.nvm"
+export NVM_DIR="/Users/glebskalinskii/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

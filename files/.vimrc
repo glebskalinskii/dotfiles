@@ -107,9 +107,9 @@ set expandtab
 " -------------------------------------------------------------
 
 " swap files
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
-set undodir=~/.vim/undo//
+" set backupdir=~/.vim/backup//
+" set directory=~/.vim/swap//
+" set undodir=~/.vim/undo//
 
 " ignore files (CtrlP)
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
