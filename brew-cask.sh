@@ -6,6 +6,7 @@ brew tap caskroom/versions
 # daily
 brew cask install alfred
 brew cask install dropbox
+brew cask install flux
 
 brew cask install whatsapp
 brew cask install viber
