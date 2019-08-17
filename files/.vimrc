@@ -22,14 +22,15 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 
 " ---Syntax---
-Plugin 'othree/html5.vim'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'mxw/vim-jsx'
+" Plugin 'othree/html5.vim'
+" Plugin 'hail2u/vim-css3-syntax'
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'jelera/vim-javascript-syntax'
+" Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'mxw/vim-jsx'
+" Plugin 'digitaltoad/vim-jade'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'chemzqm/vim-jsx-improve'
-Plugin 'digitaltoad/vim-jade'
 
 Plugin 'ap/vim-css-color'
 
@@ -107,9 +108,9 @@ set expandtab
 " -------------------------------------------------------------
 
 " swap files
-" set backupdir=~/.vim/backup//
-" set directory=~/.vim/swap//
-" set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
 " ignore files (CtrlP)
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
