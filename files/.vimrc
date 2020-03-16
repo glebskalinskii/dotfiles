@@ -30,7 +30,10 @@ Plugin 'altercation/vim-colors-solarized'
 " Plugin 'mxw/vim-jsx'
 " Plugin 'digitaltoad/vim-jade'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'chemzqm/vim-jsx-improve'
+" Plugin 'HerringtonDarkholme/yats.vim'
+
+" ---Linting/Lang tools---
+Plugin 'dense-analysis/ale'
 
 Plugin 'ap/vim-css-color'
 
@@ -52,6 +55,18 @@ Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"--------------------------------------------------------------
+" ALE
+" -------------------------------------------------------------
+" let b:ale_fixers = ['prettier']
+let g:ale_fixers = {
+      \   'javascript': ['prettier'],
+      \   'typescript': ['prettier'],
+      \   'typescriptreact': ['prettier'],
+      \   'css': ['prettier'],
+      \}
+let g:ale_fix_on_save = 1
 
 "--------------------------------------------------------------
 " EMMET

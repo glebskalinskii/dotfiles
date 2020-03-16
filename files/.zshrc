@@ -45,9 +45,10 @@ ZSH_THEME="undefined"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode)
 
 # User configuration
+export KEYTIMEOUT=1
 
 export PATH="~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
 export PATH="$HOME/.node/bin:$PATH"

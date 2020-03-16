@@ -5,7 +5,7 @@ PROMPT='$FG[032]%~ $(git_prompt_info) \
 
 $FG[105]%(!.#.»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
-RPS1='${return_code}'
+RPS1='$(vi_mode_prompt_info) ${return_code}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
