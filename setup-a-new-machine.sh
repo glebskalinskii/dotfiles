@@ -14,6 +14,8 @@ cp ./undefined.zsh-theme ~/.oh-my-zsh/themes
 
 # Node Version Manager - https://github.com/creationix/nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# https://github.com/nvm-sh/nvm#troubleshooting-on-macos
+. ~/.nvm/nvm.sh
 
 # install npm packages
 npm install --global trash
