@@ -15,5 +15,8 @@ brew install tree
 
 brew install git
 
+# https://github.com/rakyll/hey
+brew install hey
+
 # Remove outdated versions from the cellar
 brew cleanup
