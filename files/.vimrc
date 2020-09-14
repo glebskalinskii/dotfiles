@@ -35,6 +35,8 @@ Plugin 'sheerun/vim-polyglot'
 " ---Linting/Lang tools---
 Plugin 'dense-analysis/ale'
 
+Plugin 'itchyny/lightline.vim'
+
 Plugin 'ap/vim-css-color'
 
 Plugin 'Lokaltog/vim-easymotion'
@@ -73,7 +75,7 @@ let g:ale_fix_on_save = 1
 " -------------------------------------------------------------
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-E>'
-autocmd FileType html,js,php,twig,css,scss EmmetInstall
+autocmd FileType html,js,jsx,ts,tsx,css,scss EmmetInstall
 
 "--------------------------------------------------------------
 " MULTI CURSOR
@@ -88,10 +90,6 @@ let g:multi_cursor_exit_from_insert_mode=0
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|(node_modules|build)$'
 let g:ctrlp_show_hidden = 1
 
-"--------------------------------------------------------------
-" Rainbow
-"--------------------------------------------------------------
-let g:rainbow_active = 1
 "==============================================================
 
 
@@ -129,6 +127,12 @@ set undodir=~/.vim/undo//
 
 " ignore files (CtrlP)
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+" lightline
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 " turn syntax support on
 syntax on

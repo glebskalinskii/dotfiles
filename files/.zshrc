@@ -45,7 +45,10 @@ ZSH_THEME="undefined"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(
+  git
+  # vi-mode
+)
 
 # User configuration
 export KEYTIMEOUT=1
@@ -91,3 +94,4 @@ unset file
 
 export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"

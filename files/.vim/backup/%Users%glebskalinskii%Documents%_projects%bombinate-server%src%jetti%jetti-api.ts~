@@ -1,0 +1,97 @@
+/*
+ * Jetti Service
+ * API Docs - https://support.jetti.io/jetti/en/api
+ * API Reference - https://jetti.docs.apiary.io
+ * There's also a Postman collection in the team's account with most of the endpoints
+ * */
+
+import axios, { AxiosPromise } from 'axios'
+import Bottleneck from 'bottleneck'
+import { sleep } from '../utils/tools'
+
+import {
+  REDIS_HOST,
+  REDIS_PORT,
+  JETTI_URL,
+  JETTI_TOKEN,
+  JETTI_CHANNEL_ID,
+  JETTI_RATE_LIMITER_ID
+} from '../utils/environment'
+
+import { IJettiOrder } from '../types/jetti'
+
+if (!JETTI_TOKEN) throw new Error('Jetti authorization token is missing')
+if (!JETTI_CHANNEL_ID) throw new Error('Jetti channel id missing')
+
+const limiter = new Bottleneck({
+  minTime: 500,
+  maxConcurrent: 1,
+  id: JETTI_RATE_LIMITER_ID,
+  datastore: 'ioredis',
+  clearDatastore: true,
+  clientOptions: {
+    host: REDIS_HOST,
+    port: REDIS_PORT
+  }
+})
+
+limiter.on('error', function(error) {
+  console.log('Limiter Error')
+})
+limiter.on('failed', function(error, jobInfo) {
+  console.log('Limiter Failed')
+  console.log(error)
+  console.log(jobInfo)
+})
+
+const APIInstance = axios.create({
+  baseURL: JETTI_URL,
+  headers: { Authorization: `Bearer ${JETTI_TOKEN}` }
+})
+
+const API = async (options: any): Promise<any> => limiter.schedule(() => APIInstance(options))
+
+const log = async (text: any): Promise<any> => {
+  // throw new Error('HAHAH')
+  console.log('start')
+  // const random = Math.floor(Math.random() * (600 - 200)) + 200
+  // await sleep(random)
+  // await sleep(750)
+  const r = await axios({
+    headers: { Authorization: `Bearer ${JETTI_TOKEN}` },
+    url: `${JETTI_URL}/channels/${JETTI_CHANNEL_ID}/manual-sale.json`,
+    method: 'POST',
+    timeout: 50,
+    data: text
+  }) //.catch(e => console.log(e.response.status))
+  // console.log(text)
+  console.log('end')
+  return r
+}
+
+export const testLimit = (text: any): any => limiter.schedule(() => log(text))
+
+// Jetti resource docs in Step 5 of this guide - https://support.jetti.io/jetti/en/api/connecting-a-custom-channel
+export const createOrder = (data: IJettiOrder): AxiosPromise => {
+  return API({ url: `/channels/${JETTI_CHANNEL_ID}/manual-sale.json`, method: 'POST', data })
+}
+
+export const getVariants = (): AxiosPromise => API({ url: 'variants.json' })
+
+// Jetti resource docs - https://support.jetti.io/jetti/en/api/importing-products-from-a-custom-channel
+export const exportProduct = (data: any): AxiosPromise => {
+  return API({
+    url: `/channels/${JETTI_CHANNEL_ID}/import-connector-variant-batch.json`,
+    method: 'POST',
+    data
+  })
+}
+
+// Same as exportProduct but accepts array of products
+export const exportProducts = (data: any): AxiosPromise => {
+  return API({
+    url: `/channels/${JETTI_CHANNEL_ID}/import-connector-variant-batches.json`,
+    method: 'POST',
+    data
+  })
+}
