@@ -11,6 +11,8 @@ brew upgrade
 brew install vim
 brew install tmux
 
+brew install yarn
+
 brew install tree
 
 brew install git

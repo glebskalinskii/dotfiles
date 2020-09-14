@@ -17,6 +17,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 # https://github.com/nvm-sh/nvm#troubleshooting-on-macos
 . ~/.nvm/nvm.sh
 
+mkdir ~/.vim/backup//
+mkdir ~/.vim/swap//
+mkdir ~/.vim/undo//
+
 # install npm packages
 npm install --global trash
 npm install --global psi
