@@ -1,5 +1,6 @@
-*.swp
 .DS_Store
+*.swp
+files/.vim/swap
 files/.vim/.netrwhist
 files/.vim/bundle/*
 !files/.vim/bundle/Vundle.vim

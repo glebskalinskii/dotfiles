@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 #=============================================
 # source aliaces and functions
 #---------------------------------------------
-for file in ~/.{aliases,functions}; do
+for file in ~/.{aliases,functions,bb8}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file

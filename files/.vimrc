@@ -32,6 +32,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'sheerun/vim-polyglot'
 " Plugin 'HerringtonDarkholme/yats.vim'
 
+" ---Git---
+Plugin 'tpope/vim-fugitive'
+
 " ---Linting/Lang tools---
 Plugin 'dense-analysis/ale'
 
@@ -48,7 +51,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'Raimondi/delimitMate' "automatically add the closing quote, bracket ...
-Plugin 'tpope/vim-fugitive'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 
@@ -87,7 +89,7 @@ let g:multi_cursor_exit_from_insert_mode=0
 "--------------------------------------------------------------
 " CtrlP
 "--------------------------------------------------------------
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|(node_modules|build)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|yalc)|(node_modules|build|dist)$'
 let g:ctrlp_show_hidden = 1
 
 "==============================================================
