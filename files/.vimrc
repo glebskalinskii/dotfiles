@@ -65,9 +65,9 @@ filetype plugin indent on    " required
 " -------------------------------------------------------------
 " let b:ale_fixers = ['prettier']
 let g:ale_fixers = {
-      \   'javascript': ['prettier'],
-      \   'typescript': ['prettier'],
-      \   'typescriptreact': ['prettier'],
+      \   'javascript': ['prettier', 'eslint'],
+      \   'typescript': ['prettier', 'eslint'],
+      \   'typescriptreact': ['prettier', 'eslint'],
       \   'css': ['prettier'],
       \}
 let g:ale_fix_on_save = 1
@@ -89,7 +89,7 @@ let g:multi_cursor_exit_from_insert_mode=0
 "--------------------------------------------------------------
 " CtrlP
 "--------------------------------------------------------------
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|yalc)|(node_modules|build|dist)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|yalc|next)|(node_modules|build|dist)$'
 let g:ctrlp_show_hidden = 1
 
 "==============================================================

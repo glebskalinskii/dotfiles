@@ -1,38 +1,40 @@
 # Install native apps
 
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
+# legacy?
+# brew install caskroom/cask/brew-cask
+# brew tap caskroom/versions
 
 # daily
-brew cask install alfred
-brew cask install dropbox
-brew cask install flux
+brew install alfred
+brew install dropbox
+brew install flux
 
-brew cask install whatsapp
-brew cask install viber
-brew cask install slack
+brew install whatsapp
+brew install viber
+brew install slack
 
-brew cask install 1clipboard
-brew cask install 1password
-brew cask install cloudapp
+brew install 1clipboard
+brew install 1password
+brew install cloudapp
 
 # dev
-brew cask install karabiner-elements
-brew cask install sublime-text
-brew cask install visual-studio-code
-brew cask install ngrok
-brew cask install postico
-brew cask install postman
+brew install karabiner-elements
+brew install sublime-text
+brew install sublime-merge
+brew install visual-studio-code
+brew install ngrok
+brew install postico
+brew install postman
 
 # browsers
-brew cask install google-chrome
-# brew cask install google-chrome-canary
-brew cask install firefox
-# brew cask install firefox-nightly --force
-brew cask install webkit-nightly --force
-# brew cask install chromium --force
-brew cask install torbrowser
+brew install google-chrome
+# brew install google-chrome-canary
+brew install firefox
+# brew install firefox-nightly --force
+brew install webkit-nightly --force
+# brew install chromium --force
+brew install torbrowser
 
 # different
-brew cask install vlc
-brew cask install spotify
+brew install vlc
+brew install spotify
