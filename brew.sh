@@ -17,6 +17,8 @@ brew install tree
 
 brew install git
 
+brew install ack
+
 # https://github.com/rakyll/hey
 brew install hey
 
