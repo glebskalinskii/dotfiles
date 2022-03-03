@@ -49,6 +49,7 @@ Plugin 'godlygeek/tabular'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
 
 Plugin 'Raimondi/delimitMate' "automatically add the closing quote, bracket ...
 Plugin 'tomtom/tcomment_vim'
@@ -91,6 +92,64 @@ let g:multi_cursor_exit_from_insert_mode=0
 "--------------------------------------------------------------
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|yalc|next)|(node_modules|build|dist)$'
 let g:ctrlp_show_hidden = 1
+
+"--------------------------------------------------------------
+" VIM ACK
+"--------------------------------------------------------------
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+
+"--------------------------------------------------------------
+" QUICK FIX WINDOW (mostly vim.ack)
+"--------------------------------------------------------------
+" Return 1 if current window is the QuickFix window.
+function! IsQuickFixWin()
+    if &buftype == "quickfix"
+        " This is either a QuickFix window or a Location List window.
+        " Try to open a location list; if this window *is* a location list,
+        " then this will succeed and the focus will stay on this window.
+        " If this is a QuickFix window, there will be an exception and the
+        " focus will stay on this window.
+        "
+        " Unfortunately, the above technique broke with newer versions of Vim
+        " ls lopen was considered to be editing the buffer.  Instead, we'll use
+        " the new win_getid() to grab the window id and then use that to check
+        " the window information to see if it's a quickfix window (it does
+        " distinguish between quickfix and loclist).
+        if exists('*win_getid')
+            let info = getwininfo(win_getid())
+            if info[0]['quickfix']
+                return 1
+            else
+                return 0
+            endif
+        else
+            try
+                noautocmd lopen
+            catch /E776:/
+                " This was a QuickFix window.
+                return 1
+            endtry
+        endif
+    endif
+    return 0
+endfunction
+
+" Toggle QuickFix window.
+function! QuickFixWinToggle()
+    let numOpenWindows = winnr("$")
+    if IsQuickFixWin()
+        " Move to previous window before closing QuickFix window.
+        wincmd p
+    endif
+    cclose
+    if numOpenWindows == winnr("$")
+        " Window was already closed, so open it.
+        Copen
+    endif
+endfunction
+nnoremap <silent> <C-q><C-q> :call QuickFixWinToggle()<CR>
+command! -bar QuickFixWinToggle :call QuickFixWinToggle()
 
 "==============================================================
 

@@ -1,0 +1,9 @@
+--ignore-dir=.git
+--ignore-dir=.hg
+--ignore-dir=.svn
+--ignore-dir=.yalc
+--ignore-dir=.next
+
+--ignore-dir=node_modules
+--ignore-dir=build
+--ignore-dir=dist
