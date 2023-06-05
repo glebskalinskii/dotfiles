@@ -5,3 +5,4 @@ files/.vim/.netrwhist
 files/.vim/bundle/*
 !files/.vim/bundle/Vundle.vim
 files/.tmux/resurrect/
+files/.tmux/pluging/*

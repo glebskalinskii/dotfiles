@@ -5,7 +5,6 @@ chsh -s $(which zsh)
 cp ./undefined.zsh-theme ~/.oh-my-zsh/themes
 
 # Homebrew
-# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install all the things
@@ -28,9 +27,11 @@ npm install --global psi
 # install solarized theme for terminal(requires to be set as default in Preferences)
 open -a Terminal ./solarized-dark-xterm-256color.terminal
 
+# install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
+
 # karabiner settings
-# karabiner depricated key repeat
-# ./karabiner-import.sh
+./karabiner-import.sh
 
 # test installs
 git --version
