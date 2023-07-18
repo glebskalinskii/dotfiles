@@ -18,6 +18,7 @@ brew install tree
 brew install git
 
 brew install ack
+brew install jq
 
 # https://github.com/rakyll/hey
 brew install hey
