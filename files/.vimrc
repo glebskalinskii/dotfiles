@@ -98,6 +98,7 @@ let g:ctrlp_show_hidden = 1
 "--------------------------------------------------------------
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+" search word under cursor
 nnoremap <Leader>A :Ack! <C-r><C-w><CR>
 
 "==============================================================

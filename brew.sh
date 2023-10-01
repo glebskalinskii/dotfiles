@@ -8,15 +8,14 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+brew install git
+
 brew install vim
 brew install tmux
 
-brew install yarn
-
 brew install tree
 
-brew install git
-
+brew install ripgrep
 brew install ack
 brew install jq
 
