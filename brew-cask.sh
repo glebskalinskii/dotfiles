@@ -1,10 +1,14 @@
 # Install native apps
 
-# daily
+# utils
+brew install flux
+brew install maccy
+
+# storage
 brew install dropbox
 brew install google-drive
-brew install flux
 
+# messengers
 brew install whatsapp
 brew install viber
 brew install slack
