@@ -2,7 +2,7 @@
 
 # utils
 brew install flux
-brew install maccy
+brew install raycast
 
 # storage
 brew install dropbox
