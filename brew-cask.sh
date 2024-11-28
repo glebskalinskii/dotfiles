@@ -1,7 +1,6 @@
 # Install native apps
 
 # utils
-brew install flux
 brew install raycast
 
 # storage
