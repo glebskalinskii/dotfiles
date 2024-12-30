@@ -14,6 +14,7 @@ brew install slack
 
 # dev
 brew install karabiner-elements
+brew install ghostty
 brew install sublime-text
 brew install sublime-merge
 brew install visual-studio-code
