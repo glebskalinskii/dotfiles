@@ -91,7 +91,3 @@ for file in ~/.{aliases,functions,bb8}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
-
-export NVM_DIR="/Users/$USER/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
