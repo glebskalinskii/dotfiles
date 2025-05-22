@@ -12,7 +12,7 @@ cp ./undefined.zsh-theme ~/.oh-my-zsh/themes
 ./brew-cask.sh
 
 # Node Version Manager - https://github.com/creationix/nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 # https://github.com/nvm-sh/nvm#troubleshooting-on-macos
 . ~/.nvm/nvm.sh
 
