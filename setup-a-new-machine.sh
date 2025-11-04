@@ -1,8 +1,11 @@
 
-#oh-my-zsh
+# oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 cp ./undefined.zsh-theme ~/.oh-my-zsh/themes
+
+# removes last login message on terminal opening
+touch ~/.hushlogin
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
