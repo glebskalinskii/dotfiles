@@ -17,6 +17,7 @@ brew install tree
 
 brew install ripgrep
 brew install ack
+brew install fzf
 brew install jq
 
 # https://github.com/rakyll/hey

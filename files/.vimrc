@@ -48,7 +48,11 @@ Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 
 Plugin 'scrooloose/nerdtree'
+
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
 Plugin 'mileszs/ack.vim'
 
 Plugin 'Raimondi/delimitMate' "automatically add the closing quote, bracket ...
