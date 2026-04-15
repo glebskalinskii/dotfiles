@@ -26,7 +26,6 @@ brew install postman
 brew install google-chrome
 brew install firefox
 brew install brave-browser
-brew install torbrowser
 
 # different
 brew install vlc
